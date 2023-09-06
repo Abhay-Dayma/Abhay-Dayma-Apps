@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:background="@color/darkColor"
+android:layout_height="match_parent"
+tools:context=".OnBoardScreen.OnBoardOne">
+
+<Button
+    android:id="@+id/skipButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:text="Skip Intro"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:paddingRight="10dp"
+    />
+
+<ImageView
+    android:paddingTop="20dp"
+    android:src="@drawable/nk"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    app:layout_constraintBottom_toTopOf="@id/linear1"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/skipButton"
+    android:id="@+id/imageOne"
+    />
+
+
+<LinearLayout
+    android:id="@+id/linear1"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@color/innerColor"
+    app:layout_constraintTop_toBottomOf="@id/imageOne"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/myWave"
+    android:padding="20dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Our Mission"
+        android:textColor="@color/white"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:textAlignment="center"
+        android:paddingBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is a random text\n used for testing purpose \nby Abhay Dayma"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:paddingBottom="10dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/onBoard2Img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingBottom="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_circle_right_24" />
+
+</LinearLayout>
+
+
+<ImageView
+    android:id="@+id/myWave"
+    app:layout_constraintTop_toBottomOf="@id/linear1"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:src="@drawable/wave_2_"
+    app:layout_constraintRight_toRightOf="parent"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

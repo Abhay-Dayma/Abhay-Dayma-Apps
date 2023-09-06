@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cream"
+    tools:context=".RegisterEmployee">
+
+    <EditText
+        android:layout_marginBottom="20dp"
+        android:id="@+id/getEmpName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name here"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:layout_marginBottom="20dp"
+        android:id="@+id/getEmpPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your phone number here"
+        android:inputType="phone"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:layout_marginBottom="20dp"
+        android:id="@+id/getEmpEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your email here"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:layout_marginBottom="20dp"
+        android:id="@+id/getReportsTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Reports To Emp Id"
+        android:textColor="@color/blue"
+        android:inputType="number"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:layout_marginBottom="20dp"
+        android:id="@+id/getUrlToImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Profile Image Url"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btnbackground"
+        android:text="Submit"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:textSize="30sp"
+        />
+
+</LinearLayout>
